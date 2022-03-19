@@ -1,10 +1,15 @@
 pk.onNovaLoggedIn(willkommen)
 
 function willkommen()
-    local kill = nova.getTotalKills()
-    local bo = BoxOverlay:new(600,500,100,200,0xFFFFFFFF, true,true)
-local ov = TextOverlay:new("Test " ..kill, 0xFFFFFFFF, "Arial", 12, 500, 500, true, true, true)
-pk.registerTextOverlay(ov)
-pk.registerBoxOverlay(bo)
+startoverlays()
 end
 
+
+function startoverlays()
+    local bo = BoxOverlay:new(500, 500,100,200,0xFFFFFFFF, true,true)
+    local kills = TextOverlay:new("Kills: " ..nova.getTotalKills(), 0xFFFFFFFF, "Calibri", 14, 363, 750, true, true, true)
+    local deaths  = TextOverlay:new("Tote: "..nova.getTotalDeaths(),0xFFFFFFFF, "Calibri",14,363,731,true,true,true)
+pk.registerTextOverlay(kills)
+pk.registerBoxOverlay(bo)
+pk.registerTextOverlay(deaths)
+end
