@@ -3,7 +3,7 @@ pk.onNovaLoggedIn(willkommen)
 function willkommen()
     if isSharingEnabled == true then
         pk.addChatMessage("/togsharing ist aktiviert")
-    else
+    elseif isSharingEnabled == false then
         pk.addChatMessage("DU HS")
     end
 end
