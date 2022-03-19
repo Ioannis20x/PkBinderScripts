@@ -10,9 +10,8 @@ function willkommen()
 myCmd = Command:new(
     'mymoney', '/mymoney',0, 'Eigenes Geld in Chat',
     function()
-    local money = samp.getPLayerMoney()
-    samp.addChatMessage(money)
+    samp.addChatMessage(samp.getPLayerMoney())
 end
 )
 
-pk.registerCommand(myCmd)
+pk.registerCommand(myCmd);
