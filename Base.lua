@@ -1,15 +1,11 @@
 pk.onNovaLoggedIn(willkommen)
 
 function willkommen()
-    if isSharingEnabled == 1 then
-        samp.addChatMessage("/togsharing ist aktiviert")
-    elseif isSharingEnabled == 0 then
-        samp.addChatMessage("DU HS")
-    end
+    local dialogId = samp.getNewDialogId()
+    samp.showDialog(dialogId, 1, "Titel", "Eingabe:", "Ok", "Abbrechen", function(response, listItem, text)
+        samp.addChatMessage("Die Eingabe ist: " .. text)
+        return false
+    end)
 end
 
-myCmd = Command:new("togsharing", "/togsharing", 0, "XDDDDD", function(places)
-    willkommen()
-end)
-
-pk.registerCommand(myCmd)
+myCMD = Command:new("dialog", "/dialog", 0, "zeigen dialog", willkommen())
