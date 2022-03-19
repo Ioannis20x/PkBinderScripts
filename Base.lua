@@ -1,4 +1,4 @@
-pk.onNovaLoggedIn(willkommen)
+--pk.onNovaLoggedIn(willkommen)
 
 function willkommen()
     local dialogId = samp.getNewDialogId()
@@ -10,7 +10,7 @@ end
 
 myCMD = Command:new("dialog", "/dialog", 0, "zeigen dialog", 
 function(parts)
-f = Faction.GetId()
+f = Faction.GetId(5)
 samp.addChatMessage( "Test" ..f)
 end)
 
