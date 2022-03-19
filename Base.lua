@@ -9,3 +9,5 @@ function willkommen()
 end
 
 myCMD = Command:new("dialog", "/dialog", 0, "zeigen dialog", willkommen())
+
+pk.registerCommand(myCMD)
