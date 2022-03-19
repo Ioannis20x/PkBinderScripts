@@ -8,9 +8,9 @@ end
 end
 
 
-myCMD = Command:new(
+myCmd = Command:new(
     "togsharing", "/togsharing",0,"XDDDDD",
     samp.addChatMessage("/togsharing ist  ~r~ aktiviert")
 )
 
-pk.registerCommand(myCMD)
+pk.registerCommand(myCmd)
