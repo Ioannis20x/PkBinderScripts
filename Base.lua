@@ -7,7 +7,7 @@ end
 
 
 function startoverlays()
-    local bo = BoxOverlay:new(500, 730,150,175,0x000000CA, true,true)
+    local bo = BoxOverlay:new(500, 730,150,175,0x78787874, true,true)
     local kills = TextOverlay:new("Kills: " ..nova.getTotalKills(), 0xFFFFFFFF, "Calibri", 14, 363, 750, true, true, true)
     local deaths  = TextOverlay:new("Tote: "..nova.getTotalDeaths(),0xFFFFFFFF, "Calibri",14,363,731,true,true,true)
     local streak = TextOverlay:new("Streak: "..nova.getKillstreak(),0xFFFFFFFF, "Calibri",14,363,701,true,true,true)
