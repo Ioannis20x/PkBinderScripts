@@ -1,6 +1,8 @@
 pk.onNovaLoggedIn(willkommen)
 
 function willkommen()
-    samp.addChatMessage(nova.getFactionById(1))
+    local kill = nova.getTotalKills()
+local ov = TextOverlay:new("Test" ..kill, 0xFFFFFFFF, "Arial", 12, 500, 500, true, true, true)
+pk.registerTextOverlay(ov)
 end
 
