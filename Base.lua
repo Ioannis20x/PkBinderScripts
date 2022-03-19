@@ -7,12 +7,13 @@ function willkommen()
             pk.registerBoxOverlay(kdoverlay)
         end
 
+myCmd = Command:new(
+    'position', '/mymoney',0, 'Eigenes Geld in Chat',
+    showmoney()
+)
 
-function skin()
-    local skin = samp.getPlayerSkinId()
-    samp.sendChat("Dein Skin hat die ID:" .. skin);
+function showmoney()
+    local money = samp.getPLayerMoney()
+    samp.addChatMessage(money);
 end
-
-function testfunc()
-    samp.sendChat("Guten Snens");
-end
+pk.registerCommand(myCmd);
