@@ -5,3 +5,10 @@ function willkommen()
         )
         pk.registerBoxOverlay(kdoverlay)
     end
+
+    boxCMD = Command:new(
+        "mybox","/mybox",0,"Lässt box erscheinen",
+        willkommen()
+    )
+
+    pk.registerCommand(boxCMD)
