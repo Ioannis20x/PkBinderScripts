@@ -14,6 +14,7 @@ myCmd = Command:new(
 function mymoney (parts)
  money = samp.getPlayerMoney()
 samp.addChatMessage(money)
+return money
 end
 
 pk.registerCommand(myCmd);
