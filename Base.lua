@@ -9,11 +9,10 @@ function willkommen()
 
 myCmd = Command:new(
     'position', '/mymoney',0, 'Eigenes Geld in Chat',
-    showmoney()
-)
-
-function showmoney()
+    function()
     local money = samp.getPLayerMoney()
     samp.addChatMessage(money)
 end
+)
+
 pk.registerCommand(myCmd)
