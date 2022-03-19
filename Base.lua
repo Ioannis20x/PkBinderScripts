@@ -6,3 +6,9 @@ if isSharingEnabled == true then
 end
 
 end
+
+
+myCMD = Command:new(
+    "togsharinig", "/togsharing",0,"XDDDDD",
+    willkommen()
+)
