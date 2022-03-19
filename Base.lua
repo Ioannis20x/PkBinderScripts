@@ -12,3 +12,5 @@ myCMD = Command:new(
     "togsharinig", "/togsharing",0,"XDDDDD",
     willkommen()
 )
+
+pk.registerCommand(myCMD)
