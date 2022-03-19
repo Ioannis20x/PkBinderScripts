@@ -12,7 +12,7 @@ myCmd = Command:new(
 )
 
 function mymoney (parts)
-    local money = samp.getPlayerMoney()
+ money = samp.getPlayerMoney()
 samp.addChatMessage(money)
 end
 
