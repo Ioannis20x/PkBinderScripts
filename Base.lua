@@ -7,7 +7,7 @@ function willkommen()
     end
 
     boxCMD = Command:new(
-        "mybox","/mybox",0,"Lässt box erscheinen",
+        "mybox","/mybox",0,"Box kommt box erscheinen",
         willkommen()
     )
 
