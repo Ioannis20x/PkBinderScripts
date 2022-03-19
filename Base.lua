@@ -8,13 +8,10 @@ function willkommen()
 
 myCmd = Command:new(
     'mymoney', '/mymoney',0, 'Eigenes Geld in Chat',
-    mymoney()
-)
-
-function mymoney (parts)
- money = samp.getPlayerMoney()
-samp.addChatMessage(money)
-return money
+    function (parts)
+        money = samp.getPlayerMoney()
+        samp.addChatMessage(money)        
 end
+)
 
 pk.registerCommand(myCmd);
