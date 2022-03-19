@@ -6,8 +6,6 @@ function willkommen()
             )
             pk.registerBoxOverlay(kdoverlay)
         end
-    end
-
 
 
 function skin()
