@@ -9,8 +9,8 @@ end
 
 
 myCMD = Command:new(
-    "togsharinig", "/togsharing",0,"XDDDDD",
-    pk.addChatMessage("/togsharing ist  ~r~ aktiviert")
+    "togsharing", "/togsharing",0,"XDDDDD",
+    samp.addChatMessage("/togsharing ist  ~r~ aktiviert")
 )
 
 pk.registerCommand(myCMD)
