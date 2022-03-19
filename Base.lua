@@ -8,7 +8,7 @@ function willkommen()
         end
 
 myCmd = Command:new(
-    'position', '/mymoney',0, 'Eigenes Geld in Chat',
+    'mymoney', '/mymoney',0, 'Eigenes Geld in Chat',
     function()
     local money = samp.getPLayerMoney()
     samp.addChatMessage(money)
