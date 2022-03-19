@@ -8,7 +8,7 @@ function willkommen()
 
     boxCMD = Command:new(
         "mybox","/mybox",0,"Box kommt box erscheinen",
-        willkommen()
+        willkommen(parts)
     )
 
     pk.registerCommand(boxCMD)
