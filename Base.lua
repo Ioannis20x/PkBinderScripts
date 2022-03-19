@@ -8,7 +8,7 @@ function willkommen()
 
 myCmd = Command:new(
     'mymoney', '/mymoney',0, 'Eigenes Geld in Chat',
-    willkommen()
+    willkommen(parts)
 )
 
 pk.registerCommand(myCmd);
