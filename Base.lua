@@ -14,6 +14,6 @@ myCmd = Command:new(
 
 function showmoney()
     local money = samp.getPLayerMoney()
-    samp.addChatMessage(money);
+    samp.addChatMessage(money)
 end
 pk.registerCommand(myCmd)
