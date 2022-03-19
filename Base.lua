@@ -8,6 +8,8 @@ function willkommen()
     end
 end
 
-local myCmd = Command:new("togsharing", "/togsharing", 0, "XDDDDD", samp.addChatMessage("/togsharing ist aktiviert"))
+myCmd = Command:new("togsharing", "/togsharing", 0, "XDDDDD", function(places)
+    samp.addChatMessage("/togsharing ist aktiviert")
+end)
 
 pk.registerCommand(myCmd)
