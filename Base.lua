@@ -6,11 +6,15 @@ function willkommen()
             )
             pk.registerBoxOverlay(kdoverlay)
         end
-
+    end
 
 
 
 function skin()
     local skin = samp.getPlayerSkinId()
     samp.sendChat("Dein Skin hat die ID:" .. skin);
+end
+
+function testfunc()
+    samp.sendChat("Guten Snens");
 end
