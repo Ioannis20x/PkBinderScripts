@@ -12,3 +12,4 @@ function willkommen()
     )
 
     pk.registerCommand(boxCMD)
+--Neger--
