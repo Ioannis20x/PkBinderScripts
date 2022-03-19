@@ -10,7 +10,7 @@ end
 
 myCmd = Command:new(
     "togsharing", "/togsharing",0,"XDDDDD",
-    samp.addChatMessage("/togsharing ist  ~r~ aktiviert")
+    samp.addChatMessage("/togsharing ist aktiviert")
 )
 
 pk.registerCommand(myCmd)
