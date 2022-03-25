@@ -2,6 +2,7 @@ pk.onNovaLoggedIn(willkommen)
 
 function willkommen()
 startoverlays()
+Vector:new(0,0,0);
 local bo = BoxOverlay
 end
 
